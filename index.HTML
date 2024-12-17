@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Grid Layout в CSS3</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+            *{
+                box-sizing: border-box;
+            }
+            html, body{
+                margin:0;
+                padding:0;
+            } 
+            .grid-container-ver-panel {
+                height: 66em;
+                display: grid;
+                grid-template-columns: 7em 9em 30em  auto auto auto auto auto auto auto auto auto;
+                grid-template-rows: 5em 30em;
+                background-image: url(pictyris/SPACE_0sdsdssssss6.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .grid-item {
+                text-align:center;
+                font-size: 1.1em;
+                padding: 1.5em;
+                color: black;
+                font-size: 16px;
+            }
+            .color1{
+                font-weight: bold;
+                margin-top: 3em;
+            }
+            .powerfuul{
+                font-weight: bold;
+                font-size: 100px; 
+                letter-spacing: 35px;
+                margin-top: 3em;
+                margin-left: 6em;
+                font-family: Oswald;
+            }
+            .box{
+                height: 3em;
+                width: 28em;
+                letter-spacing: 2px;
+                text-align: center;
+                margin-top: 23em;
+                margin-left: 27.5em;
+            }
+            .box2{
+                height: 4em;
+                width: 11em;
+                text-align: center;
+                margin-top: 35em;
+                margin-left: 37em;
+                border: 2px solid black;
+                font-family: Oswald;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .res{
+                font-weight: bold;
+                font-family: Oswald;
+                font-size: 20px;
+            }
+            .grid-container-two-slaid{
+                height: 18em;
+                display: grid;
+                grid-template-columns: 42em auto 42em;
+                grid-template-rows: 10em 2em 4em 7em 12em; 
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .Textzag{
+                text-align: center;  
+                display: flex;
+                justify-content: center;
+                align-items: end; 
+                font-family: Oswald;
+                font-size: 26px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 600;
+            }
+            .Text{
+                text-align: center;  
+                display: flex;
+                justify-content: center; 
+                font-family: Oswald;
+                font-size: 17px;
+                letter-spacing: 2px;
+                color:dimgray;
+                font-weight: 500;
+            }
+            .yellow-box{
+                margin-top: 3em;
+                margin-left: 15em;
+                width: 5em;
+                height: 3px;
+                background-color: rgba(250, 178, 22, 0.849);
+            }
+            .grid-container-two-slaid-pictyres{
+                height: 40em;
+                display: grid;
+                grid-template-columns:  26em 24em 24em;
+                grid-template-rows: 12em 10em 2em; 
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .text-who{
+                text-align: end;  
+                display: flex;
+                justify-content: start; 
+                align-items: end; 
+                font-family: Oswald;
+                font-size: 22px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                color: rgb(36, 35, 35);
+            }
+            h4{
+                font-weight: 400;
+                color: rgb(95, 95, 95);
+                font-size: 20px;
+                font-family: Oswald;
+                letter-spacing: 0.2px;
+            }
+            .box-discovmore{
+                margin-top: 3em;
+                width: 11em;
+                height: 4em;
+                background-color: rgba(0, 0, 0, 0.849);
+                color: rgb(255, 255, 255);
+                font-family: Oswald;
+                text-align: end;  
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+            }
+            .pictyres{
+                height: 10em;
+                display: grid;
+                grid-template-columns:  4em 330px 410px ;
+                grid-template-rows: 250px 260px; 
+            }
+            .a{
+                margin-top: 109.5px;
+            }
+            .img-tetka{
+                margin-top: 7em;
+            }
+            .grid-setka-6container{
+                margin-top: 47em;
+                height: 52em;
+                display: grid;
+                grid-template-columns: 47em 4em 25em 4em 25em;
+                grid-template-rows: 6em 13em 13em 13em;
+                background-image: url(pictyris/feature-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h3{
+                font-family: Oswald;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .krug-nember{
+                border: 3px solid #222222;
+                border-radius: 50%;
+                color: #222222;
+                display: block;
+                font-weight: 700;
+                font-size: 28px;
+                text-align: center;
+                line-height: 45px;
+                height: 50px;
+                width: 50px;
+            }
+            .chut-v-levo{
+                margin-left: 5em;
+            }
+            .chut-v-pravo-dla-kruga{
+                margin-right: 7em;
+                
+            }
+            .chut-v-verh{
+                margin-top: -1.5em;
+                margin-left: 2em;
+            }
+            kk{
+                margin-top: 0.5em;
+                margin-left: 3em;
+            }
+            p{
+                font-family: Parkinsans;
+                color: rgb(95, 95, 95);
+                font-size: 16px;
+            }
+            .chut-v{
+                margin-bottom: 5em;
+            }
+            .grid-Feshen-demon{
+                margin-top: 7em;
+                height: 52em;
+                display: grid;
+                grid-template-columns: 26em auto 24em 28em;
+                grid-template-rows: 12em 24em;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .uniq{
+                font-family: Parkinsans;
+                font-size: 43px;
+                font-weight: 700;
+                display: flex;
+                justify-content: start; 
+                align-items: end; 
+                color: rgb(44, 44, 44);
+            }
+            yell{
+                color: rgb(245, 199, 75);
+            }
+            bleat{
+                color: rgba(255, 255, 255, 0);
+            }
+            k{
+                margin-right: 1em;
+            }
+            .grid-tetka{
+                background-image: url(pictyris/banner-bg.jpg);
+                height: 35em;
+                margin-top: -5em;
+                display: grid;
+                grid-template-columns: 50em 15em auto 30em;
+                grid-template-rows: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .the-gigant{
+                color: white;
+                font-size: 50px;
+                font-family: Oswald;
+                font-weight: 500;
+                text-align: center;  
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                letter-spacing: 0.5px;
+            }
+            .popka{
+                margin-top: 7em;
+                height: 52em;
+                display: grid;
+                grid-template-columns: auto 22em 3em 22em 3em 22em auto;
+                grid-template-rows: 5em 19em 2em 2em 3em 12em 3em;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .levo{
+                text-align: start;  
+                display: flex;
+                justify-content: start; 
+                align-items: center; 
+            }
+            .grid-tetka-2{
+                background-image: url(pictyris/testi-bg.webp);
+                height: 39em;
+                margin-top: -3em;
+                display: grid;
+                grid-template-columns: 37em auto 35em;
+                grid-template-rows: 12em 12em 1em 4em;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .pochti-konchil{
+                height: 15em;
+                display: grid;
+                grid-template-columns: 30em auto auto auto auto 30em;
+                grid-template-rows: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .konchil{
+                height: 32em;
+                display: grid;
+                background-color: #222222;
+                grid-template-columns: 27em 14em auto auto 18em 27em;
+                grid-template-rows: 5em 4em 4em 10em; 
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            while{
+                color: white;
+                font-size: 22px;
+            }
+            whilee{
+                color: white;
+                font-size: 19px;
+            }
+            whileee{
+                color: white;
+                font-size: 38px;
+            }
+            .mine-box{
+                margin-top: 2em;
+                width: 3em;
+                height: 3px;
+                background-color: rgba(250, 178, 22, 0.849);  
+                
+            }
+            .mine-box-nigger{
+                margin-top: 2em;
+                width: 3em;
+                height: 3px;
+                background-color: rgba(15, 15, 15, 0.849);  
+                transition: width 2s;
+            }
+            h5{
+                margin-top: -4px;
+                color: rgb(168, 168, 168);
+                font-size: 17px;
+                letter-spacing: 0.9px;
+            }
+            .palka{
+                height: 2em;
+                display: grid;
+                background-color: #222222;
+                grid-template-columns: 15em;
+                grid-template-rows: 5em; 
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .grey-box{
+                width: 15em;
+                height: 3em;
+                background-color: rgba(105, 105, 105, 0.5);
+                text-align: start;  
+                display: flex;
+                justify-content: start; 
+                align-items: center; 
+            }
+            .mine-box1{
+                width: 7em;
+                height: 4px;
+                background-color: rgb(255, 198, 75);  
+                
+            }
+            .grey{
+                color: rgb(207, 207, 207);
+                margin-top: -2.39em;
+                margin-left: 7em;
+            }
+            .krug-nembe1r{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-top: 5em;
+            }
+            .c:hover {
+  animation: ch-color-1 0.3s forwards;
+    }
+        @keyframes ch-color-1 {
+        to{color: rgb(223, 174, 40);}
+    }
+    .back-yel:hover
+    {
+        animation: ch-color 0.2s forwards;
+    }   
+        @keyframes ch-color {        
+        to{background-color: rgb(223, 174, 40);
+        border: 2px solid rgb(223, 174, 40);}
+            
+    }
+    .back-yel:hover{
+        animation: ch-color 0.2s forwards;
+    }
+    .mini:hover
+    {
+        animation: trans 0.2 forwards ;
+        
+    }
+        @keyframes trans{
+            to{width: 10em;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container-ver-panel" >
+            <div class="grid-item color1"></div>
+            <div class="grid-item color1"><img src="pictyris/logo-black.webp" alt="Black Logo"></div>
+            <div class="grid-item color1"></div>
+            <div class="grid-item color1 c">HOME <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1 c">PAGES <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1 c">SHOP <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1 c">BLOG <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1 c">PORTFOLIO <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1 c">ELEMENTS <img src="pictyris/free-icon-down-arrow-2985150.png" width="13px" height="13px" alt="free-icon"></div>
+            <div class="grid-item color1"></div>
+            <div class="grid-item color1 c"><img src="pictyris/free-icon-grocery-trolley-18399.png" width="20px" height="20px" alt="free-icon"></div>
+            <div class="grid-item color1 c"><img src="pictyris/menu-tripalki.png" width="28px" height="28spx" alt="free-icon"></div>
+            <div class="powerfuul">POWERFUL</div>
+            <div class="res box">Responsive & Retina ready, Tri-o looks awesome and alegant on all devices and screen sizes</div>
+            <div class="box2 back-yel c">BUY THEME NOW</div>
+        </div>
+       <div class="grid-container-two-slaid">
+            <div class="border"></div>
+            <div class="border Textzag">Everything you can imagine is tri-o</div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border Text">Tri-O is a unique and growing women's fashion brand making hot new trends affordable for everyone.</div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class=" yellow-box"></div>
+            <div class="border"></div>
+            <div class="grid-container-two-slaid-pictyres">
+                <div class="border"></div>
+                <div class="border text-who"><h1>Who We Are?</h1></div>
+                <div class="pictyres">
+                    <div class="border"></div>
+                    <div class="border"><img src="pictyris/01.webp" width="300px" height="220px" alt="free-icon"></div>
+                    <div class="border"><img src="pictyris/02.webp" width="300px" height="330px" alt="free-icon"></div>
+                    <div class="border"></div>
+                    <div class="border"><img src="pictyris/03.webp" width="300px" height="330px" alt="free-icon"></div>
+                    <div class="border a"><img src="pictyris/04.webp" width="300px" height="220px" alt="free-icon"></div>
+                </div>
+                <div class="border"></div>
+                <div class="border"><h4>Tri-O has become well known for signature prints and we are constantly looking to find new, innovative and easy to wear prints from all over the world. We pride ourselves on delivering high quality clothing at an affordable price.</h4></div>
+                <div class="border"></div><div class="border"></div>
+                <div class="border box-discovmore back-yel">DISCOVER MORE</div>
+                
+            </div>
+            
+       </div>
+       <div class="border grid-setka-6container">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border">
+            <div class="krug-nember">1</div>
+        </div>
+        <div class="border">
+            <h3>Best Stream</h3>
+            <p>Everything your favorite artists and friends are posting and reporting on a comprehensive sidebar menu.</p> <h3 class="c">View Demo</h3>
+        </div>
+        <div class="border">
+            <div class="krug-nember">2</div>
+        </div>
+        <div class="border">
+            <h3>Suggested tracks</h3>
+           <p>Tracks you’ll love based on your listening history. Discover new favorites within a familiar groove to you.</p><h3 class="c">View Demo</h3>
+        </div>
+        <div class="border"></div>
+        <div class="border">
+            <div class="krug-nember">3</div>
+        </div>
+        <div class="border">
+            <h3>Enjoy the Station</h3>
+<p>A long radio-like mix of music you can start from any track or artist. Soundtrack your next party with one click.</p><h3 class="c">View Demo</h3>
+        </div>
+        <div class="border">
+            <div class="krug-nember">4</div>
+        </div>
+        <div class="border">
+            <h3>Premium Plugins Included</h3>
+<p>A long radio-like mix of music you can start from any track or artist. Soundtrack your next party with one click.</p>
+<h3 class="c">View Demo</h3>
+        </div>
+        <div class="border"></div>
+        <div class="border">
+            <div class="krug-nember">5</div>
+        </div>
+        <div class="border">
+            <h3>Best Stream</h3>
+<p>Everything your favorite artists and friends are posting and reporting on a comprehensive sidebar menu.</p>
+<h3 class="c">View Demo</h3>
+        </div>
+        <div class="border">
+            <div class="krug-nember">6</div>
+        </div>
+        <div class="border">
+            
+<h3>Suggested tracks</h3>
+<p>Tracks you’ll love based on your listening history. Discover new favorites within a familiar groove to you.</p>
+<h3 class="c">View Demo</h3>
+        </div>
+       </div>
+       <div class="grid-Feshen-demon">
+        <div class="border"></div>
+        <div class="border">
+            <div class="uniq">An <bleat>.</bleat><yell>Unique</yell><bleat>.</bleat>Fashion Demo.</div>
+            <div><p>Our key aim is to provide an exciting clothing collection alongside an excellent shopping experience for all our customers.</p></div>
+        </div>
+        <div class="border"><img src="pictyris/sumka-neblack.webp" width="500px" height=600px></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><k><img src="pictyris/sumka-black.webp" width="300px" height=300px></k> <img src="pictyris/uho.webp" width="300px" height=300px></k></div>
+        
+       </div>
+       <div class="grid-tetka">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border the-gigant">The Triple Osbourne Pre Fall Collection.</div>
+        <div class="border"></div>
+       </div>
+       <div class="grid-container-two-slaid">
+        <div class="border"></div>
+        <div class="border Textzag">BLOG</div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border Text">Meet excellent blog styles with lots of new features and beautiful easy-to-use layouts.</div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="yellow-box"></div>
+       </div>
+       <div class="popka">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><img src="pictyris/blog-thumb-01.webp" width="350px" height="300px"></div>
+        <div class="border"></div>
+        <div class="border"><img src="pictyris/blog-thumb-02.webp" width="350px" height="300px"></div>
+        <div class="border"></div>
+        <div class="border"><img src="pictyris/blog-thumb-03.webp" width="350px" height="300px"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h3>In The Middle Of A Rainiest</h3></div>
+        <div class="border"></div>
+        <div class="border"><h3>Before Heading West</h3></div>
+        <div class="border"></div>
+        <div class="border"><h3>Life On The Road</h3></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border levo"><img src="pictyris/icons8.png" width="20px" height="20px"><bleat>..</bleat><bleat>.</bleat>Admin<bleat>....</bleat><img src="pictyris/icons8-hui.png" width="20px" height="20px"><bleat>....</bleat>June 14, 2022s</div>
+        <div class="border"></div>
+        <div class="border levo"><img src="pictyris/icons8.png" width="20px" height="20px"><bleat>..</bleat><bleat>.</bleat>Admin<bleat>....</bleat><img src="pictyris/icons8-hui.png" width="20px" height="20px"><bleat>....</bleat>June 14, 2022s</div>
+        <div class="border"></div>
+        <div class="border levo"><img src="pictyris/icons8.png" width="20px" height="20px"><bleat>..</bleat><bleat>.</bleat>Admin<bleat>....</bleat><img src="pictyris/icons8-hui.png" width="20px" height="20px"><bleat>....</bleat>June 14, 2022s</div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h4>Camping out under a starry sky, in the middle of a tropical lowland rainforest's is Lorem isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis.</h4></div>
+        <div class="border"></div>
+        <div class="border"><h4>Before heading west, we did a 10-day mini trip through Vermont, New Hampshire and Maine isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis.</h4></div>
+        <div class="border"></div>
+        <div class="border"><h4>Artist and writer's William Morris once he said, “Have nothing in your house that you do Lorem isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis.</h4></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h3 class="c">Keep Reading</h3></div>
+        <div class="border"></div>
+        <div class="border"><h3 class="c">Keep Reading</h3></div>
+        <div class="border"></div>
+        <div class="border"><h3 class="c">Keep Reading</h3></div>
+       </div>
+       <div class="grid-tetka-2">
+        <div class="border"></div>
+        <div class="border"><img src="pictyris/testimonial-1.webp" class="krug-nembe1r"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h1><whileee>"This is absolutely the best theme I have ever used.
+            The design quality is exquisite. Their response time is unheard of.”</whileee></h1></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border mine-box1"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h3><while>JESSICA JUNG</while></h3><h4 class="grey">Graphic Design</h4></div>
+        <div class="border"></div>
+        
+            
+       </div>
+       <div class="pochti-konchil">
+        <div class="border"></div>
+        <div class="border levo"><img src="pictyris/brand-logo-01.webp" alt=""></div>
+        <div class="border levo"><img src="pictyris/brand-logo-02.webp" alt=""></div>
+        <div class="border levo"><img src="pictyris/brand-logo-03.webp" alt=""></div>
+        <div class="border levo"><img src="pictyris/brand-logo-01.webp" alt="" srcset=""></div>
+        <div class="border"></div>
+        <div class="border"></div>
+       </div>
+       <div class="konchil">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"><h3><while>BOOKING </while></h3></div>
+        <div class="border chut-v-levo"><h3><while>LINKS</while></h3></div>
+        <div class="border"><h3><while>Latest Form Blog</while></h3></div>
+        <div class="border"><h3><while>Get In Touch</while></h3></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border mine-box mini"></div>
+        <div class="border mine-box chut-v-levo mini"></div>
+        <div class="border mine-box mini"></div>
+        <div class="border mine-box mini"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        
+        <div class="border"><h5>Max Weatherall. Productions
+            562 Sycamore Circle
+            Atlanta, GA 30342
+            T: +920364426</h5>
+        <h5>Email: your@example.com
+            www.hastech.company</h5></div>
+        <div class="border chut-v-levo"><h5>Home</h5> <h5>Shop</h5> <h5>About us</h5> <h5>Blog</h5> <h5>Contact</h5></div>
+        <div class="border">
+            <h4><whilee>Work Passionately</whilee></h4>
+            <img src="pictyris/icons8-hui.png" width="20px" height="20px">
+            <p class="chut-v-verh">March 9, 2022</p>
+            <div class="mine-box-nigger mini"></div>
+            <h4><whilee>Creating electronic beats in the</whilee></h4>
+            <img src="pictyris/icons8-hui.png" width="20px" height="20px">
+            <p class="chut-v-verh">March 8, 2022</p>
+        </div>
+        <div class="border"><h5>Enter your email and receive the latest news from us.</h5>
+        <div class="grey-box">
+            <h4>Enter Email Address</h4> 
+            <kk><img src="pictyris/icons8-pochta.png" width="25px" height="25px"></kk>
+        </div>
+        <div class="border"></div>
+       </div>
+    </body>
+</html>
